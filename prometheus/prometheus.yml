@@ -28,6 +28,11 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:9090']
 
+  - job_name: 'exadel'
+    scrape_interval: 10s
+    static_configs:
+      - targets: ['localhost:9797']
+
   - job_name: 'pushgateway'
     scrape_interval: 10s
     honor_labels: true
@@ -39,7 +44,7 @@ alerting:
   alertmanagers:
   - scheme: http
     static_configs:
-    - targets: 
+    - targets:
       - 'alertmanager:9093'
 
 #  - job_name: 'nginx'

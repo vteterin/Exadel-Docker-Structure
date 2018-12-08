@@ -135,3 +135,13 @@ services:
       - monitor-net
     labels:
       org.label-schema.group: "monitoring"
+
+  exadel:
+    image: windost/tomcat9-brnews
+    container_name: tomcat9-brnews
+    expose:
+      - 9797
+    networks:
+      - monitor-net
+    labels:
+      org.label-schema.group: "monitoring"
