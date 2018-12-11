@@ -142,7 +142,7 @@ services:
     ports:
       - "9797:9797"
     networks:
-      back:
-        ipv4_address: 172.20.0.120 
+      - monitor-net:
+        ipv4_address: 172.20.0.120
     labels:
       org.label-schema.group: "monitoring"
