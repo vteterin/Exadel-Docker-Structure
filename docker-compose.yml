@@ -142,6 +142,6 @@ services:
     ports:
       - "9797:9797"
     networks:
-      - monitor-net:172.20.0.120
+      - monitor-net
     labels:
       org.label-schema.group: "monitoring"
