@@ -137,8 +137,8 @@ services:
       org.label-schema.group: "monitoring"
 
   exadel:
-    image: windost/tomcat9-brnews
-    container_name: tomcat9-brnews
+    image: windost/websrv
+    container_name: websrv
     expose:
       - 9797
     networks:
