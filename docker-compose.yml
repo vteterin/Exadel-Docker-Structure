@@ -139,9 +139,10 @@ services:
   exadel:
     image: windost/websrv
     container_name: websrv
-    expose:
-      - 9797
+    ports:
+      - "9797:9797"
     networks:
-      - monitor-net
+      back:
+        ipv4_address: 172.20.0.120 
     labels:
       org.label-schema.group: "monitoring"
